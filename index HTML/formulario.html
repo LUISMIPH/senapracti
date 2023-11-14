@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Ingreso</title>
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <img src="Logo_sena.jpg" alt="Logo del SENA" width="25%" height="25%" style="margin-right: 10px;">
+            <p>¡Bienvenido al SENA!</p>
+        </h1>
+        <form id="loginForm" action="video.html" method="post" target="_blank">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required><br>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br>
+
+            <div class="button-container">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

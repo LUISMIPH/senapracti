@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Ingreso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 350px;
+            padding: 40px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: green;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none; /* Elimina el subrayado del enlace */
+        }
+
+        .boton:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Ingreso</h1>
+        <form id="loginForm" action="pagina_principal.html" method="post" onsubmit="return validarContrasena()">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required><br>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required><br>
+
+            <div class="button-container">
+                <a href="formulario.html" class="boton">Ingresar</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function validarContrasena() {
+            var contrasena = document.getElementById('contrasena').value;
+
+            if (contrasena === 'SENA') {
+                // Contraseña correcta, el formulario se envía y se redirige a la página principal
+                return true;
+            } else {
+                // Contraseña incorrecta, muestra una alerta
+                alert('La contraseña no coincide. Inténta de nuevo.');
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

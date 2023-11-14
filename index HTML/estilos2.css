@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  #contenedor2 {
+    width: 1200px;
+    margin: 0 auto
+  }
+  
+  #header {
+    background-color: #ff0000;
+    overflow: hidden;
+    padding: 10px;
+    width: 100%;
+  }
+  th, tr {
+    padding: 10px;
+    border: 2px solid #000000;
+    text-align: center;
+  }
+ 
+  #titulo { 
+    width: 1200px;
+    text-align: center;
+  }
+
+ 
+  table {
+    width: 100%;
+  }
+
+  .contenedor12 {
+    text-align: center;
+    line-height: 200px;
+  }
+
+  img {
+
+    border: 1px solid #000ff0;
+    padding: 5px;
+    width: 630px;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+    
+  }
+  
